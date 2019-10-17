@@ -1,0 +1,53 @@
+.title-screen {
+    background: url('../../../public/images/background.png') no-repeat;
+    background-size: 100% 740px;
+
+    &__content {
+        text-align: center;
+        color: $white;
+    }
+
+    &__title {
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3em;
+        letter-spacing: 0.02em;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1em;
+    }
+
+    &__numbers {
+        text-align: center;
+        background-color: $darker-white;
+    }
+
+    &__value {
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4.5em;
+        color: $accent;
+    }
+
+    &__text {
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5em;
+        color: $dark;
+    }
+
+    &__sub-text {
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1em;
+    }
+}

@@ -6,7 +6,7 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js'
+    filename: '[name].js'
   },
   module: {
     rules: [
@@ -33,24 +33,25 @@ const config = {
         use: [
           'style-loader',
           'css-loader',
+          'resolve-url-loader',
           'sass-loader'
         ]
       },
       {
-        test: /\.svg$/,
+        test: /\.(png|jpe?g|gif)$/i,
         use: 'file-loader'
       },
-      {
-        test: /\.png$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              mimetype: 'image/png'
-            }
-          }
-        ]
-      }
+      // {
+      //   test: /\.(png|jpe?g|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'url-loader',
+      //       options: {
+      //         mimetype: 'image/png',
+      //       },
+      //     },
+      //   ],
+      // }
     ]
   },
   plugins: [
