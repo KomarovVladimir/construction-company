@@ -1,0 +1,51 @@
+.request {
+    background-color: $accent;
+    color: $white;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__wrapper {
+        display: inline-block;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3em;
+        letter-spacing: 0.02em;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5em;
+        letter-spacing: 0.02em;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 14px 30px;
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1em;
+        color: $black;
+        background-color: $white;
+        text-decoration: none;
+    }
+
+    &__btn-icon {
+        padding-right: 15px;
+    }
+}

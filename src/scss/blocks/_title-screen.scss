@@ -29,6 +29,7 @@
     }
 
     &__value {
+        margin-bottom: 25px;
         font-family: $oswald;
         font-style: normal;
         font-weight: 500;
@@ -37,11 +38,12 @@
     }
 
     &__text {
+        margin-bottom: 10px;
         font-family: $oswald;
         font-style: normal;
         font-weight: 500;
         font-size: 2.5em;
-        color: $dark;
+        color: $black;
     }
 
     &__sub-text {
@@ -49,5 +51,6 @@
         font-style: normal;
         font-weight: 500;
         font-size: 1em;
+        color: $gray;
     }
 }

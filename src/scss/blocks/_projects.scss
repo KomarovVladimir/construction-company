@@ -1,0 +1,41 @@
+.projects {
+    &__h2 {
+        color: $dark;
+    }
+
+    &__image {
+        display: block;
+        width: 350px;
+        height: 380px;
+        margin-bottom: 66px;
+    }
+
+    &__name {
+        position: relative;
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5em;
+        color: $dark;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -21px;
+            background-color: $accent;
+            width: 55px;
+            height: 6px;
+        }
+    }
+
+    &__description {
+        font-family: $sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1em;
+        color: $gray;
+    }
+}
