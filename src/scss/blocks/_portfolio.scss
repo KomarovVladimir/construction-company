@@ -1,0 +1,11 @@
+.portfolio {
+    &__preview {
+        display: block;
+        width: 100%;
+        height: 400px;
+    }
+
+    &__col {
+        padding: 0;
+    }
+}
