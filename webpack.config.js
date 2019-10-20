@@ -59,6 +59,12 @@ const config = {
       filename: 'index.html',
       template: 'src/assets/index.html',
       title: 'Construction Co.'
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery'",
+      "window.$": "jquery"
     })
   ],
   optimization: {
