@@ -3,6 +3,7 @@ import 'jquery-ui/ui/widgets/accordion';
 
 $( function() {
     $( "#accordion" ).accordion({
-        collapsible: true
+        active: false,
+        collapsible: true,
     });
 });

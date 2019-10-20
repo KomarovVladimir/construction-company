@@ -1,0 +1,39 @@
+.reviews {
+    &__card {
+        padding: 30px;
+        background-color: $darker-white;
+        margin-bottom: 30px;
+    }
+
+    &__quote {
+        display: block;
+        margin-bottom: -50px;
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 6em;
+        color: $accent;
+    }
+
+    &__content {
+        font-family: $sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 21px;
+        color: $gray;
+    }
+
+    &__name {
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4em;
+        letter-spacing: 0.02em;
+        color: black;
+    }
+
+    &__company {
+        color: $accent;
+    }
+}
