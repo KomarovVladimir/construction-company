@@ -1,0 +1,33 @@
+.contacts {
+    &__item {
+        text-align: center;
+        color: $accent;
+    }
+    
+    &__icon {
+        font-size: 3em;
+    }
+
+    &__title {
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 2em;
+        color: $gray;
+    }
+
+    &__data {
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 2em;
+        color: $black;
+    }
+
+    &__email {
+        text-decoration: none;
+        color: $accent;
+    }
+}

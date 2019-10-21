@@ -1,18 +1,8 @@
 .request {
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $accent;
     color: $white;
-    
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    &__wrapper {
-        display: inline-block;
-    }
 
     &__title {
         margin: 0;
@@ -34,7 +24,7 @@
     }
 
     &__btn {
-        display: inline-block;
+        display: block;
         padding: 14px 30px;
         font-family: $oswald;
         font-style: normal;
