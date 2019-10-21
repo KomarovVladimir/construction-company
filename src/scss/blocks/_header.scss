@@ -1,0 +1,28 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        cursor: pointer;
+    }
+
+    &__button {
+        padding: 12px 15px;
+        font-size: 1.5em;
+        background-color: $accent;
+        outline: none;
+        border: none;
+        color: $white;
+        cursor: pointer;
+    }
+}
