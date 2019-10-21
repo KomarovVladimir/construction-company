@@ -6,9 +6,12 @@
     
     &__icon {
         font-size: 3em;
+        margin-bottom: 10px;
     }
 
     &__title {
+        margin: 0;
+        margin-bottom: 10px;
         font-family: $oswald;
         font-style: normal;
         font-weight: 500;
@@ -18,11 +21,12 @@
     }
 
     &__data {
+        margin: 0;
         font-family: $oswald;
         font-style: normal;
         font-weight: 500;
         font-size: 1.5em;
-        line-height: 2em;
+        line-height: 1.5em;
         color: $black;
     }
 
