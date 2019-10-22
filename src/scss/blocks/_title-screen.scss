@@ -3,11 +3,20 @@
     background-size: 100% 740px;
 
     &__content {
+        padding-top: 190px;
+        padding-bottom: 190px;
         text-align: center;
         color: $white;
     }
 
+    &__item {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     &__title {
+        margin: 0;
+        margin-bottom: 30px;
         font-family: $oswald;
         font-style: normal;
         font-weight: 500;
@@ -30,7 +39,7 @@
     }
 
     &__value {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         font-family: $oswald;
         font-style: normal;
         font-weight: 500;
