@@ -1,6 +1,8 @@
 .title-screen {
-    background: url('../../../public/images/background.png') no-repeat;
-    background-size: 100% 740px;
+    margin-bottom: 150px;
+    background: url('../../../public/images/background.png') center no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
 
     &__content {
         padding-top: 190px;
@@ -62,5 +64,63 @@
         font-weight: 500;
         font-size: 1em;
         color: $gray;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .title-screen {
+        margin-bottom: 100px;
+        background-position-y: -80px;
+
+        &__content {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        &__item {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+    
+        &__value {
+            font-size: 2.8em;
+        }
+    
+        &__text {
+            font-size: 2em;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .title-screen {
+        margin-bottom: 60px;
+
+        &__value {
+            font-size: 2em;
+        }
+    
+        &__text {
+            font-size: 1.5em;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .title-screen {
+        background-position-y: 0px;
+
+        &__title {
+            font-size: 2em;
+        }
+
+        &__numbers {
+            display: none;
+        }
     }
 }

@@ -8,3 +8,15 @@
     text-align: center;
     color: $black;
 }
+
+@include media-breakpoint-down(md) {
+    .h2 {
+        margin-bottom: 30px;
+        font-size: 2em;
+    }
+}
+@include media-breakpoint-down(xs) {
+    .h2 {
+        font-size: 1.5em;
+    }
+}
