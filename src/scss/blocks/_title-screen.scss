@@ -12,13 +12,13 @@
     }
 
     &__item {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: $lg;
+        padding-bottom: $lg;
     }
 
     &__title {
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: $sm;
         font-family: $oswald;
         font-style: normal;
         font-weight: 500;
@@ -78,12 +78,12 @@
         }
 
         &__item {
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: $sm;
+            padding-bottom: $sm;
         }
 
         &__title {
-            margin-bottom: 30px;
+            margin-bottom: $sm;
             font-size: 2.5em;
         }
     
@@ -99,13 +99,18 @@
 
 @include media-breakpoint-down(sm) {
     .title-screen {
-        margin-bottom: 60px;
+        margin-bottom: $lg;
 
         &__value {
             font-size: 2em;
         }
     
+        &__value {
+            margin-bottom: 5px;
+        }
+
         &__text {
+            margin-bottom: 5px;
             font-size: 1.5em;
         }
     }

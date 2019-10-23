@@ -1,6 +1,7 @@
 .request {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 150px;
+    padding-top: $sm;
+    padding-bottom: $sm;
     background-color: $accent;
     color: $white;
 
@@ -25,7 +26,7 @@
 
     &__btn {
         display: block;
-        padding: 14px 30px;
+        padding: $xs $sm;
         font-family: $oswald;
         font-style: normal;
         font-weight: 500;
@@ -37,5 +38,36 @@
 
     &__btn-icon {
         padding-right: 15px;
+    }
+}
+
+@include media-breakpoint-down(mb) {
+    .request {
+        margin-bottom: $lg;
+
+    }
+}
+@include media-breakpoint-down(md) {
+    .request {
+        margin-bottom: $lg;
+
+        &__title {
+            font-size: 2.5em;
+            margin-bottom: $xs;
+        }
+    
+        &__subtitle {
+            font-size: 1em;
+            margin-bottom: $sm;
+        }
+    }
+}
+@include media-breakpoint-down(xs) {
+    .request {
+        margin-bottom: $lg;
+
+        &__title {
+            font-size: 2em;
+        }
     }
 }
