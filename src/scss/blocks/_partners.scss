@@ -11,3 +11,14 @@
         height: auto;
     }
 }
+
+@include media-breakpoint-down(md) {
+    .partners {
+        margin-bottom: $xlg;
+    }
+}
+@include media-breakpoint-down(xs) {
+    .partners {
+        margin-bottom: $lg;
+    }
+}

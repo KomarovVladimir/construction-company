@@ -69,7 +69,7 @@
 
 @include media-breakpoint-down(md) {
     .title-screen {
-        margin-bottom: 100px;
+        margin-bottom: $xlg;
         background-position-y: -80px;
 
         &__content {

@@ -55,7 +55,7 @@
 
 @include media-breakpoint-down(md) {
     .projects {
-        margin-bottom: $lg;
+        margin-bottom: $xlg;
 
         &__image {
             height: 200px;

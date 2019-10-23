@@ -35,3 +35,14 @@
         color: $accent;
     }
 }
+
+@include media-breakpoint-down(md) {
+    .contacts {
+        margin-bottom: $xlg;
+    }
+}
+@include media-breakpoint-down(xs) {
+    .contacts {
+        margin-bottom: $lg;
+    }
+}

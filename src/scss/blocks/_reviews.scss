@@ -1,4 +1,6 @@
 .reviews {
+    margin-bottom: 150px; 
+    
     &__card {
         padding: 30px;
         background-color: $darker-white;
@@ -35,5 +37,17 @@
 
     &__company {
         color: $accent;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .reviews {
+        margin-bottom: $xlg;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .reviews {
+        margin-bottom: $lg;
     }
 }
