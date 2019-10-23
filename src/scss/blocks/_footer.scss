@@ -5,10 +5,21 @@
     color: $white;
 
     &__copyright { 
+        display: block;
         font-family: $sans;
         font-style: normal;
         font-weight: normal;
         font-size: 1em;
         line-height: 1.4em;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .footer {
+        text-align: center;
+
+        &__copyright {
+            margin-bottom: $sm;
+        }
     }
 }

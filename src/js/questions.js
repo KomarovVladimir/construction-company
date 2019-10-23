@@ -13,6 +13,7 @@ $( function() {
             $(this).removeClass('questions--current');
             $(this).find('i').removeClass('questions--arrow-open');
         } else {
+            $('.questions__title').removeClass('questions--current');
             $(this).addClass('questions--current');
             $(this).find('i').addClass('questions--arrow-open');
         }

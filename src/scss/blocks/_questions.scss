@@ -14,7 +14,7 @@
 
     &__title {
         margin: 0;
-        margin-bottom: $xs;
+        margin-bottom: $sm;
         font-family: $oswald;
         font-style: normal;
         font-weight: 500;
@@ -60,6 +60,10 @@
 @include media-breakpoint-down(sm) {
     .questions {
         margin-bottom: $lg;
+
+        &__title {
+            font-size: 1.2em;
+        }
     }
 }
 

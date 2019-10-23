@@ -1,4 +1,6 @@
 .contacts {
+    margin-bottom: 150px;
+
     &__item {
         text-align: center;
         color: $accent;
@@ -39,6 +41,18 @@
 @include media-breakpoint-down(md) {
     .contacts {
         margin-bottom: $xlg;
+
+        &__item {
+            margin-bottom: $md;
+        }
+
+        &__title {
+            font-size: 1.2em;
+        }
+
+        &__data {
+            font-size: 1em;
+        }
     }
 }
 @include media-breakpoint-down(xs) {
