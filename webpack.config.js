@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 const config = {
   entry: './src/index.js',
@@ -31,27 +32,32 @@ const config = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
-          'css-loader',
-          'resolve-url-loader',
-          'sass-loader'
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+                plugins: [
+                  autoprefixer({
+                    browsers:['ie >= 8', 'last 4 version']
+                  })
+                ],
+                sourceMap: true
+            }
+          },
+          { loader: 'resolve-url-loader'},
+          { loader: 'sass-loader' }
         ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: 'file-loader'
       },
-      // {
-      //   test: /\.(png|jpe?g|gif)$/i,
-      //   use: [
-      //     {
-      //       loader: 'url-loader',
-      //       options: {
-      //         mimetype: 'image/png',
-      //       },
-      //     },
-      //   ],
-      // }
     ]
   },
   plugins: [
