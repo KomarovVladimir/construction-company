@@ -4,6 +4,7 @@ import 'jquery-ui/ui/widgets/accordion';
 $( function() {
     $( '#questions' ).accordion({
         active: false,
+        heightStyle: "content",
         collapsible: true,
     });
 

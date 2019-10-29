@@ -3,8 +3,15 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: .2s ease-in;
 
     z-index: 1000;
+
+    &--scrolled {
+        background-color: $dark;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 
     &__navbar {
         display: flex;

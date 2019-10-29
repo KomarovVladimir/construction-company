@@ -3,6 +3,7 @@ import 'normalize.css';
 import './scss/style.scss';
 
 //JS
+import '@cmyee/pushy/js/pushy';
 import './js/portfolio';
 import './js/questions';
-import '@cmyee/pushy/js/pushy';
+import './js/header';
