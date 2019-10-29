@@ -1,0 +1,20 @@
+$menu_width: 400px;
+@import 'node_modules/@cmyee/pushy/scss/pushy.scss';
+
+
+.pushy {
+    background-color: $accent;
+
+    ul {
+        list-style: none;
+    }
+
+    &-link, & a {
+        font-family: $oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2em;
+        color: $white;
+    }
+
+}

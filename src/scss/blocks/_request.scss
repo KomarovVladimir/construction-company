@@ -34,6 +34,12 @@
         color: $black;
         background-color: $white;
         text-decoration: none;
+        transition: .4s ease-out;
+
+        &:hover {
+            box-shadow: 5px 5px 0 0 $dark;
+            color: $accent;
+        }
     }
 
     &__btn-icon {

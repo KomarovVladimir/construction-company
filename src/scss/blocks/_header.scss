@@ -1,10 +1,10 @@
 .header {
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: fixed;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    z-index: 1000;
 
     &__navbar {
         display: flex;
@@ -23,6 +23,11 @@
         outline: none;
         border: none;
         color: $white;
+        transition: .4s ease-out;
         cursor: pointer;
+
+        &:hover {
+            background-color: $light-accent;
+        }
     }
 }

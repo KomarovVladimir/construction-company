@@ -1,8 +1,10 @@
-@import './bootstrap-custom';
-
-@import './media';
-
 @import './variables';
+
+@import './bootstrap-custom';
+@import './pushy';
+
+
+@import './base';
 @import './blocks/header';
 @import './blocks/h2';
 @import './blocks/title-screen';
@@ -15,3 +17,4 @@
 @import './blocks/reviews';
 @import './blocks/contacts';
 @import './blocks/footer';
+@import './blocks/anchor';

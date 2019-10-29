@@ -9,22 +9,39 @@
     <script src="https://kit.fontawesome.com/484a53ce24.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link"><a href="#projects-anchor">Проекты</a></li>
+                <li class="pushy-link"><a href="#services-anchor">Услуги</a></li>
+                <li class="pushy-link"><a href="#portfolio-anchor">Портфолио</a></li>
+                <li class="pushy-link"><a href="#questions-anchor">Вопросы</a></li>
+                <li class="pushy-link"><a href="#partners-anchor">Партнеры</a></li>
+                <li class="pushy-link"><a href="#reviews-anchor">Отзывы</a></li>
+                <li class="pushy-link"><a href="#contacts-anchor">Контакты</a></li>
+        </div>
+    </nav>
+    
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
     <!-- HEADER -->
-    <!-- <div class="container position-relative">
-        <header class="header">
+    <header class="header">
+        <div class="container">
             <nav class="header__navbar" role="navigation">
                 <a href="#">
                     <img class="header__logo" src="../../public/images/logo.png" alt="Construction Co.">
                 </a>
-                <button class="header__button">
+                <button class="header__button menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
             </nav>
-        </header>
-    </div> -->
+        </div>
+    </header>
 
     <!-- PAGE CONTENT -->
-    <main role="main" class="main">
+    <main class="main">
         <section class="title-screen">
             <div class="container">
                 <div class="title-screen__content">
@@ -72,6 +89,7 @@
             </div>
         </section>
 
+        <a id="projects-anchor" class="anchor"></a>
         <section class="projects">
             <div class="container">
                 <div class="h2 projects__h2">НАШИ САМЫЕ БОЛЬШИЕ ПРОЕКТЫ</div>
@@ -134,6 +152,7 @@
             </div>
         </section>
 
+        <a id="services-anchor" class="anchor"></a>
         <section class="services">
             <div class="container">
                 <div class="h2">ЧЕМ МЫ ЗАНИМАЕМСЯ?</div>
@@ -206,6 +225,7 @@
             </div>
         </section>
 
+        <a id="portfolio-anchor" class="anchor"></a>
         <section id="portfolio" class="portfolio">
             <span id="portfolio-btn" class="portfolio__btn">
                 <i id="portfolio__arrow" class="fas fa-sort-down portfolio__arrow portfolio--arrow-open"></i>
@@ -216,55 +236,80 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 portfolio__col">
-                        <a href="" class="portfolio__item">
-                            <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
-                        </a>
+                        <div class="portfolio__item">
+                            <a href="#">
+                                <div class="portfolio__overlay"><span>О ПРОЕКТЕ</span></div>
+                                <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-3 portfolio__col">
-                        <a href="" class="portfolio__item">
-                            <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
-                        </a>
+                        <div class="portfolio__item">
+                            <a href="#">
+                                <div class="portfolio__overlay"><span>О ПРОЕКТЕ</span></div>
+                                <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-3 portfolio__col">
-                        <a href="" class="portfolio__item">
-                            <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
-                        </a>
+                        <div class="portfolio__item">
+                            <a href="#">
+                                <div class="portfolio__overlay"><span>О ПРОЕКТЕ</span></div>
+                                <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-3 portfolio__col">
-                        <a href="" class="portfolio__item">
-                            <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
-                        </a>
+                        <div class="portfolio__item">
+                            <a href="#">
+                                <div class="portfolio__overlay"><span>О ПРОЕКТЕ</span></div>
+                                <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-3 portfolio__col">
-                        <a href="" class="portfolio__item">
-                            <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
-                        </a>
+                        <div class="portfolio__item">
+                            <a href="#">
+                                <div class="portfolio__overlay"><span>О ПРОЕКТЕ</span></div>
+                                <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-3 portfolio__col">
-                        <a href="" class="portfolio__item">
-                            <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
-                        </a>
+                        <div class="portfolio__item">
+                            <a href="#">
+                                <div class="portfolio__overlay"><span>О ПРОЕКТЕ</span></div>
+                                <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-3 portfolio__col">
-                        <a href="" class="portfolio__item">
-                            <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
-                        </a>
+                        <div class="portfolio__item">
+                            <a href="#">
+                                <div class="portfolio__overlay"><span>О ПРОЕКТЕ</span></div>
+                                <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-3 portfolio__col">
-                        <a href="" class="portfolio__item">
-                            <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
-                        </a>
+                        <div class="portfolio__item">
+                            <a href="#">
+                                <div class="portfolio__overlay"><span>О ПРОЕКТЕ</span></div>
+                                <img src="../../public/images/portfolio.png" alt="preview" class="portfolio__preview">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <a id="questions-anchor" class="anchor"></a>
         <section class="questions">
             <div class="container">
                 <div class="h2">
                     ОТВЕТЫ НА ВОПРОСЫ
                 </div>
-                <div id="accordion">
+                <div id="questions">
                     <h3 class="questions__title">
                         <i class="fas fa-sort-down questions__arrow"></i>
                         <span class="questions__title-text">
@@ -309,7 +354,8 @@
             </div>
         </section>
 
-        <section class="partners py-4">
+        <a id="partners-anchor" class="anchor"></a>
+        <section class="partners">
             <div class="container">
                 <h2 class="h2 partners__title">
                     НАШИ ПАРТНЕРЫ
@@ -349,6 +395,7 @@
             </div>
         </section>
 
+        <a id="reviews-anchor" class="anchor"></a>
         <section class="reviews">
             <div class="container">
                 <h2 class="h2">ОТЗЫВЫ О РАБОТЕ С НАМИ</h2>
@@ -426,6 +473,7 @@
                 </div>
             </section>
 
+        <a id="contacts-anchor" class="anchor"></a>
         <section class="contacts">
             <div class="container">
                 <h2 class="h2">
@@ -506,7 +554,7 @@
                 </div>
                 <div class="col-md-auto">
                     <span class="footer__author">
-                        Разработано лучшей студей
+                        
                     </span>
                 </div>
             </div>

@@ -35,6 +35,10 @@
     &__email {
         text-decoration: none;
         color: $accent;
+
+        &:hover {
+            color: $light-accent;
+        }
     }
 }
 
