@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
   entry: './src/index.js',
@@ -71,7 +72,10 @@ const config = {
       jQuery: "jquery",
       "window.jQuery": "jquery'",
       "window.$": "jquery"
-    })
+    }),
+    new CopyWebpackPlugin([
+      {from:'src/images',to:'images'} 
+    ]), 
   ],
   optimization: {
     runtimeChunk: 'single',
