@@ -51,12 +51,13 @@ const config = {
                 sourceMap: true
             }
           },
+          // { loader: 'resolve-url-loader'},
           { loader: 'sass-loader' }
         ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        use: 'file-loader'
+        use: 'url-loader'
       },
     ]
   },
