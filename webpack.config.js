@@ -51,7 +51,6 @@ const config = {
                 sourceMap: true
             }
           },
-          // { loader: 'resolve-url-loader'},
           { loader: 'sass-loader' }
         ]
       },
