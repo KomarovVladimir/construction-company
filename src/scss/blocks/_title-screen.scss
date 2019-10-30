@@ -1,11 +1,11 @@
 .title-screen {
     margin-bottom: 150px;
-    background: url('../../images/background.png') center no-repeat;
+    background: url('../images/background.png') center no-repeat;
     background-size: cover;
     background-position-y: -150px;
 
     &__content {
-        padding-top: 190px;
+        padding-top: 260px;
         padding-bottom: 190px;
         text-align: center;
         color: $white;
@@ -118,14 +118,10 @@
 
 @include media-breakpoint-down(xs) {
     .title-screen {
-        background-position-y: 0px;
+        background-position-y: -100px;
 
         &__title {
             font-size: 2em;
-        }
-
-        &__numbers {
-            display: none;
         }
     }
 }

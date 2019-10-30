@@ -1,12 +1,33 @@
-$menu_width: 400px;
-@import 'node_modules/@cmyee/pushy/scss/pushy.scss';
-
+$menu-width: 300px;
 
 .pushy {
     background-color: $accent;
+    width: 300px;
+
+    &-left{
+        transform: translate3d(-300px,0,0);
+    }
+
+    &-open-left #container,
+    &-open-left .push {
+        transform: translate3d(300px, 0, 0); 
+    }
+
+    &-right {
+        transform: translate3d(300px, 0, 0);
+    }
+
+    &-open-right #container,
+    &-open-right .push {
+        transform: translate3d(-300px, 0, 0);
+    }
 
     ul {
         list-style: none;
+
+        &:first-child {
+            margin-top: 60px;
+        }
     }
 
     &-link, & a {
