@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
@@ -45,13 +45,12 @@ const config = {
             options: {
                 plugins: [
                   autoprefixer({
-                    browsers:['ie >= 8', 'last 4 version']
+                    overrideBrowserslist: [ "defaults" ]
                   })
                 ],
                 sourceMap: true
             }
           },
-          // { loader: 'resolve-url-loader'},
           { loader: 'sass-loader' }
         ]
       },
@@ -59,12 +58,24 @@ const config = {
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: 'url-loader'
       },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/assets/index.html',
+      template: 'src/assets/pages/index.html',
       title: 'Construction Co.'
     }),
     new webpack.ProvidePlugin({
@@ -74,7 +85,7 @@ const config = {
       "window.$": "jquery"
     }),
     new CopyWebpackPlugin([
-      {from:'src/images',to:'images'} 
+      {from:'src/assets/images', to:'images'} 
     ]), 
   ],
   optimization: {
