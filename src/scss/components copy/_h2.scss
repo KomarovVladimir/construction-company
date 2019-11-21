@@ -1,0 +1,14 @@
+.h2 {
+    margin: px(10);
+}
+
+@include media-breakpoint-down(md) {
+    .h2 {
+        font-size: 2em;
+    }
+}
+@include media-breakpoint-down(xs) {
+    .h2 {
+        font-size: 1.5em;
+    }
+}

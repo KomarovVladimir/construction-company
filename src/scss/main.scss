@@ -1,21 +1,22 @@
 @import './abstracts/variables';
+@import './abstracts/functions/size';
 
 @import './vendors/bootstrap-custom';
 @import './vendors/pushy';
 
 @import './base/base';
 
-@import './layout/header';
-@import './layout/footer';
+// @import './layout/header';
+// @import './layout/footer';
 
 @import './components/h2';
-@import './components/title-screen';
-@import './components/projects';
-@import './components/request';
-@import './components/services';
-@import './components/portfolio';
-@import './components/partners';
-@import './components/questions';
-@import './components/reviews';
-@import './components/contacts';
-@import './components/anchor';
+// @import './components/title-screen';
+// @import './components/projects';
+// @import './components/request';
+// @import './components/services';
+// @import './components/portfolio';
+// @import './components/partners';
+// @import './components/questions';
+// @import './components/reviews';
+// @import './components/contacts';
+// @import './components/anchor';

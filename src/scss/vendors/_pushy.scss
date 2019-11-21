@@ -1,7 +1,4 @@
-$menu-width: 300px;
-
 .pushy {
-    background-color: $accent;
     width: 300px;
 
     &-left{
@@ -29,13 +26,4 @@ $menu-width: 300px;
             margin-top: 60px;
         }
     }
-
-    &-link, & a {
-        font-family: $oswald;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.2em;
-        color: $white;
-    }
-
 }
