@@ -1,16 +1,6 @@
 @import '../abstracts/variables';
 
 //px
-@function px($n) {
+@function size($n) {
     @return $base * $n * 1px;
-}
-
-//em
-@function em($n) {
-    @return $n * 1em;
-}
-
-//rem
-@function rem($n) {
-    @return $n * 1rem;
 }

@@ -1,57 +1,22 @@
 .services {
-    margin-bottom: 150px;
-    
+    padding-top: size(15);
+    padding-bottom: size(18);
+
     &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: $lg $sm;
-        margin-bottom: $sm;
-        background-color: $darker-white;
+        margin-bottom: size(8);
     }
 
-    &__icon {
-        display: inline-block;
-        margin-bottom: $sm;
-    }
-
-    &__name {
-        margin: 0;
-        font-family: $oswald;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.2em;
-        line-height: 1.4em;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: $black;
+    &__btn {
+        margin-bottom: size(2.5);
     }
 }
 
 @include media-breakpoint-down(md) {
     .services {
-        margin-bottom: $xlg;
-
-        &__item {
-            padding: $sm $sm;
-        }
-
-        &__icon {
-            margin-bottom: $xs;
-        }
-
-        &__name {
-            font-size: 1em;
-        }
     }
 }
 
 @include media-breakpoint-down(sm) {
     .services {
-        margin-bottom: $lg;
-
-        &__name {
-            font-size: 1.2em;
-        }
     }
 }

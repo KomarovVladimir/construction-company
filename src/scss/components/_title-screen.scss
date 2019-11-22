@@ -1,10 +1,10 @@
 .title-screen {
-    background-size: cover;
     background-image: url(../assets/images/title_screen.png);
+    background-size: cover;
 
     &__content {
-        padding-top: px(50);
-        padding-bottom: px(46);
+        padding-top: size(50);
+        padding-bottom: size(46);
         color: $white;
     }
 }

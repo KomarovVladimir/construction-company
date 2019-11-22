@@ -1,0 +1,55 @@
+.h1 {
+    margin-top: 0;
+    margin-bottom: size(1);
+    font-family: $rubik;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+
+    &__subtitle {
+        margin: 0;
+        font-family: $lato;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 100%;
+        text-align: center;
+    }
+}
+
+.h2 {
+    margin-top: 0;
+    margin-bottom: size(12);
+    font-family: $rubik;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+
+    &_left {
+        text-align: left;
+    }
+}
+
+.h3 {
+    margin-top: 0;
+    margin-bottom: size(3);
+    font-family: $rubik;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.p {
+    margin: 0;
+    margin-bottom: size(2);
+    font-family: $lato;
+    size: 1rem;
+    font-weight: 400;
+}
+
+@include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(xs) {
+}
