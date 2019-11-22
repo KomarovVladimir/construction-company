@@ -1,9 +1,21 @@
 .services {
-    padding-top: size(15);
-    padding-bottom: size(18);
 
     &__item {
         margin-bottom: size(8);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+        height: size(42);
+        width: auto;
+    }
+
+    &__link {
+        color: $black;
+        text-decoration: none;
     }
 
     &__btn {

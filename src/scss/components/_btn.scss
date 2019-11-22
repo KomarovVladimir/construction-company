@@ -1,7 +1,23 @@
 .btn {
+    display: inline-block;
     font-family: $lato;
-    size: 1rem;
+    font-size: 1rem;
     font-weight: 400;
     color: $black;
-    // text-underline-offset: 0.5em;
+    text-underline-position: under;
+
+    &_outline {
+        padding: size(3) size(4);
+        border: 1px solid $black;
+        text-decoration: none;
+    }
+
+    &_white {
+        color: $white;
+        border-color: $white;
+    }
+
+    &_lg {
+        font-size: 2rem;
+    }
 }
