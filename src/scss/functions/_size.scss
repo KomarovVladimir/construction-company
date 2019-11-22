@@ -1,4 +1,4 @@
-@import '../variables';
+@import '../abstracts/variables';
 
 //px
 @function px($n) {
@@ -7,10 +7,10 @@
 
 //em
 @function em($n) {
-    @return $base * $n * 1em;
+    @return $n * 1em;
 }
 
 //rem
 @function rem($n) {
-    @return $base * $n * 1rem;
+    @return $n * 1rem;
 }

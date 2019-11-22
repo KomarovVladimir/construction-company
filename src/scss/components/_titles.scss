@@ -1,8 +1,29 @@
 .h1 {
-    
+    margin-top: 0;
+    margin-bottom: px(2);
+    font-family: $rubik;
+    font-size: rem(6);
+    font-weight: 500;
+    line-height: 100%;
+
+    &_centered {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-family: $lato;
+        font-size: rem(2);
+        font-weight: 400;
+        line-height: 100%;
+    }
 }
 
 .h2 {
+}
+
+.centered {
+    text-align: center;
 }
 
 @include media-breakpoint-down(md) {

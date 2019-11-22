@@ -1,5 +1,5 @@
 @import './abstracts/variables';
-@import './abstracts/functions/size';
+@import './functions/size';
 
 @import './vendors/bootstrap-custom';
 @import './vendors/pushy';
@@ -9,7 +9,9 @@
 // @import './layout/header';
 // @import './layout/footer';
 
-// @import './components/h2';
+@import './components/titles';
+@import './components/title-screen';
+@import './components/metrics';
 // @import './components/title-screen';
 // @import './components/projects';
 // @import './components/request';

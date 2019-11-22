@@ -1,7 +1,10 @@
 html {
+    font-size: px(2);
     scroll-behavior: smooth;
+    font-family: $lato;
+    color: $black;
 }
 
 body {
-    background-color: $white;
+    background-color: #ababab;
 }

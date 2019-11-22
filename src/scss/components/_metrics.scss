@@ -1,0 +1,25 @@
+.metrics {
+    margin-top: - px(4);
+
+    &__card {
+        padding-top: px(9);
+        padding-bottom: px(9);
+        background-color: $white;
+        border-radius: $corners;
+    }
+    
+    &__value {
+        margin-bottom: px(2);
+        font-family: $rubik;
+        font-size: rem(5.5);
+        line-height: 100%;
+        text-align: center;
+    }
+    
+    &__label {
+        font-family: $lato;
+        font-size: rem(2);
+        line-height: 100%;
+        text-align: center;
+    }
+}
