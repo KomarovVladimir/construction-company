@@ -1,11 +1,14 @@
 .services {
-
     &__item {
         margin-bottom: size(8);
 
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    &__content {
+        padding-right: size(2);
     }
 
     &__image {
