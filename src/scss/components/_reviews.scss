@@ -1,66 +1,49 @@
 .reviews {
-    margin-bottom: 150px;
-    
+    &__items {
+        margin-bottom: size(2);
+    }
+
     &__card {
-        padding: 30px;
-        background-color: $darker-white;
-        margin-bottom: 30px;
+        padding: size(6) size(4) size(7) size(3);
+        background-color: $d-white;
+        border-radius: $corners;
     }
 
-    &__quote {
-        display: block;
-        margin-bottom: -50px;
-        font-family: $oswald;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 6em;
-        color: $accent;
-    }
-
-    &__content {
-        margin: 0;
-        font-family: $sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1em;
-        line-height: 1.5em;
-        color: $gray;
+    &__text {
+        margin-bottom: size(5);
     }
 
     &__name {
-        font-family: $oswald;
-        font-style: normal;
+        display: block;
+        margin-bottom: size(2);
+        font-family: $rubik;
+        font-size: 2rem;
         font-weight: 500;
-        font-size: 1.4em;
-        letter-spacing: 0.02em;
-        color: black;
+        line-height: 100%;
+        color: $black;
     }
 
     &__company {
-        color: $accent;
+        display: block;
+        font-family: $lato;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 100%;
+        color: $gray;
+    }
+
+    &__pagination {
+        text-align: center;
     }
 }
 
 @include media-breakpoint-down(md) {
     .reviews {
-        margin-bottom: $xlg;
-
-        &__item {
-            margin-bottom: $lg;
-        }
-
-        &__card {
-            margin-bottom: $xs;
-        }
     }
 }
 
 @include media-breakpoint-down(sm) {
     .reviews {
-        margin-bottom: $lg;
-
-        &__name {
-            font-size: 1.2em;
-        }
+        
     }
 }

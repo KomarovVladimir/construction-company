@@ -1,12 +1,14 @@
-.portfolio {
-    background-color: $d-white;
-    
+.gallery {
     &__items {
         margin-bottom: size(2);
     }
 
+    &__row {
+        margin-bottom: size(4);
+    }
+
     &__image {
-        height: size(64);
+        height: size(32);
         width: 100%;
         object-fit: cover;
     }
@@ -17,12 +19,12 @@
 }
 
 @include media-breakpoint-down(md) {
-    .portfolio {
+    .gallery {
 
     }
 }
 @include media-breakpoint-down(xs) {
-    .portfolio {
+    .gallery {
 
     }
 }

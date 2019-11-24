@@ -1,0 +1,59 @@
+.faq {
+    position: relative;
+    background-color: $d-white;
+
+    &__decoration-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__decoration {
+        content: '';
+        height: 100%;
+        width: auto;
+        padding: 0;
+        background-image: url(../assets/images/faq.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__decoration-col {
+        padding: 0;
+    }
+
+    &__wrapper {
+        
+    }
+
+    &_inactive {
+        color: $gray;
+    }
+
+    &__item {
+        margin-bottom: size(8);
+    }
+
+    &__text {
+        padding-left: size(4);
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .faq {
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .faq {
+    }
+}
+
+
+@include media-breakpoint-down(xs) {
+    .faq {
+    }
+}
