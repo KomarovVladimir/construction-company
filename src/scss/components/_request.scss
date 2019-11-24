@@ -4,7 +4,10 @@
     font-size: 3.5rem;
     color: $white;
     background-color: $black;
-    background-image: url(../assets/images/decorations/dots.svg);
+    background-image: url(../assets/images/backgrounds/dots.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     &__title {
         margin-bottom: size(3);

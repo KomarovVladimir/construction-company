@@ -2,6 +2,10 @@
     color: $white;
     background-color: $black;
     border-bottom: 1px solid $dark;
+
+    &__icon {
+        margin-right: size(1);
+    }
 }
 
 @include media-breakpoint-down(md) {

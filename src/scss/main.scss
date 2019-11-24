@@ -1,12 +1,13 @@
 @import './abstracts/variables';
 @import './functions/size';
+@import './mixins/center';
 
 @import './vendors/bootstrap-custom';
 @import './vendors/pushy';
 
 @import './base/base';
 
-// @import './layout/header';
+@import './layout/header';
 // @import './layout/footer';
 
 @import './components/typoraphy';
@@ -24,4 +25,5 @@
 @import './components/reviews';
 @import './components/contacts';
 @import './components/partners';
+@import './components/carousel';
 // @import './components/anchor';

@@ -1,0 +1,34 @@
+.carousel {
+    position: relative;
+
+    &__arrows {
+        @include center('both');
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    &__arrow {
+        content: '';
+        height: size(10);
+        width: size(6);
+        margin-left: - size(8);
+        background: none;
+        background-image: url(../assets/images/interface/arrow.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        outline: none;
+        cursor: pointer;
+        border: none;
+
+        &_left {
+            margin-right: - size(8);
+            transform: rotate(180deg);
+        }
+    }
+
+    &__pagination {
+        text-align: center;
+    }
+}
