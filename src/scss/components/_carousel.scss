@@ -46,3 +46,11 @@
         text-align: center;
     }
 }
+
+@include media-breakpoint-down(md) {
+    .carousel {
+        &__arrow {
+            display: none;
+        }
+    }
+}

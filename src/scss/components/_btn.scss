@@ -1,7 +1,7 @@
 .btn {
     display: inline-block;
     font-family: $lato;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 400;
     color: $black;
     text-underline-position: under;
@@ -33,8 +33,13 @@
         color: $white;
         border-color: $white;
     }
+}
 
-    &_lg {
-        font-size: 2rem;
+@include media-breakpoint-down(sm) {
+    .btn {
+        &_outline {
+            padding: size(2) size(3);
+            font-size: 1.5rem;
+        }
     }
 }

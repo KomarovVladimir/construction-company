@@ -5,7 +5,7 @@
         height: size(64);
         width: 100%;
         object-fit: cover;
-    }
+    } 
 }
 
 @include media-breakpoint-down(md) {
@@ -13,8 +13,46 @@
 
     }
 }
-@include media-breakpoint-down(xs) {
-    .portfolio {
 
+@include media-breakpoint-down(sm) {
+    .portfolio {
+        &__content {
+            display: none;
+        }
+
+        &__sub {
+            position: relative;
+            z-index: 1;
+        }
+
+        &__over {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(34, 34, 34, .7);
+            border-radius: $corners;
+            text-align: center;
+
+            z-index: 100;
+        }
+
+        &__image {
+            height: size(39);
+        }
+
+        &__link {
+            font-size: 1.75rem;
+            color: $white;
+        }
+
+        &__btn {
+            font-size: 1.25rem;
+            color: $white;
+        }
     }
 }
