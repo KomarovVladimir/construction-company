@@ -23,14 +23,22 @@
         cursor: pointer;
         border: none;
         z-index: 1;
-
+        
         &_left {
             left: - size(8);
+
+            &:hover {
+                transform: translate(- size(.5), -50%);
+            }
         }
 
         &_right {
             right: - size(8);
             transform: translateY(-50%) rotate(180deg);
+
+            &:hover {
+                transform: translate(size(.5), -50%) rotate(180deg);
+            }
         }
     }
 

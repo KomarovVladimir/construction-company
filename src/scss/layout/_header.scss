@@ -5,6 +5,8 @@
 
     z-index: 2000;
 
+    transition: .5s ease-out;
+
     &_scrolled {
         padding-top: size(2);
         padding-bottom: size(2);
@@ -22,33 +24,6 @@
             padding: size(2) size(2);
         }
     }
-
-    // &_mobile {
-    //     & .header__ul {
-    //         display: none;
-    //         width: 100%;
-    //         margin-top: size(5);
-    //         padding-top: size(5);
-    //         border-top: 1px solid $dark;
-    //     }
-
-    //     & .header__nav-item {
-    //         display: block;
-    //     }
-
-    //     & .header__nav-link {
-    //         display: block;
-    //         padding-left: 0;
-    //         padding-top: size(2);
-    //         padding-bottom: size(2);
-    //         font-size: 1.5rem;
-    //         text-align: center;
-    //     }
-
-    //     & .header__btn {
-    //         display: inline-block;
-    //     }
-    // }
 
     &_mobile_show {
         height: 100%;
