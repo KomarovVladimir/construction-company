@@ -1,5 +1,6 @@
 .services {
     &__item {
+        position: relative;
         margin-bottom: size(8);
 
         &:last-child {
@@ -13,7 +14,8 @@
 
     &__image {
         height: size(42);
-        width: auto;
+        width: 100%;
+        object-fit: cover;
     }
 
     &__btn {
@@ -28,5 +30,48 @@
 
 @include media-breakpoint-down(sm) {
     .services {
+        &__item {
+            margin-bottom: size(3);
+        }
+
+        &__sub {
+            position: relative;
+            z-index: 1;
+        }
+
+        &__over {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(34, 34, 34, .7);
+            border-radius: $corners;
+
+            z-index: 100;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__link {
+            display: block;
+            color: $white;
+            line-height: size(16);
+            width: 100%;
+        }
+
+        &__image {
+            height: size(16);
+        }
+
+        &__content {
+            display: none;
+        }
+
+        &__btn {
+            display: none !important;
+        }
     }
 }

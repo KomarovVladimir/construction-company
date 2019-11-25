@@ -2,3 +2,22 @@
     padding-top: size(15);
     padding-bottom: size(18);
 }
+
+@include media-breakpoint-down(md) {
+    .section {
+      
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .section {
+        
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .section {
+        padding-top: size(8);
+        padding-bottom: size(9);
+    }
+}

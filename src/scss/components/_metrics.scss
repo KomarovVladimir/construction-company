@@ -2,8 +2,7 @@
     margin-top: - size(4);
 
     &__card {
-        padding-top: size(9);
-        padding-bottom: size(9);
+        padding: size(9) size(2);
         background-color: $d-white;
         border-radius: $corners;
     }
@@ -20,5 +19,41 @@
         font-family: $lato;
         font-size: 2rem;
         text-align: center;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .metrics {
+        &__card {
+            padding: size(4) size(1);
+        }
+
+        &__value {
+            font-size: 3rem;
+        }
+
+        &__label {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .metrics {
+        &__value {
+            font-size: 1.5rem;
+        }
+
+        &__label {
+            font-size: 1rem;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .metrics {
+        &__value {
+            font-size: 1.5rem;
+        }
     }
 }
