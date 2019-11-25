@@ -1,25 +1,24 @@
 .footer {
-    background-color: $dark;
-    padding-top: 30px;
-    padding-bottom: 30px;
     color: $white;
+    background-color: $black;
 
-    &__copyright { 
-        display: block;
-        font-family: $sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1em;
-        line-height: 1.4em;
+    &__logo {
+        font-size: 2.5rem;
+        margin-bottom: size(12);
+    }
+
+    &__logo-link {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: $l-gray;
+        }
     }
 }
 
 @include media-breakpoint-down(sm) {
     .footer {
-        text-align: center;
 
-        &__copyright {
-            margin-bottom: $sm;
-        }
     }
 }

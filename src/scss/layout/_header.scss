@@ -2,9 +2,26 @@
     position: fixed;
     width: 100%;
     padding-top: size(8);
-    padding-bottom: size(8);
 
     z-index: 2000;
+
+    &_scrolled {
+        padding-top: size(2);
+        padding-bottom: size(2);
+        background-color: $black;
+
+        & .header__nav {
+            align-items: center;
+        }
+
+        & .header__nav-item {
+            margin: 0;
+        }
+
+        & .header__nav-link {
+            padding: size(2) size(2);
+        }
+    }
 
     &__nav {
         display: flex;
@@ -30,59 +47,18 @@
 
     &__nav-item {
         display: inline-block;
-        margin-right: size(2);
-
-        &:last-of-type {
-            margin-right: 0;
-        }
     }
 
     &__nav-link {
+        padding: size(2) size(2);
         font-family: $lato;
         font-size: 1rem;
         font-weight: 400;
         color: $white;
         text-decoration: none;
+
+        &:hover {
+            color: $l-gray;
+        }
     }
 }
-
-// .header {
-//     position: fixed;
-//     width: 100%;
-//     padding-top: size(8);
-//     padding-bottom: size(8);
-//     transition: .2s ease-in;
-
-//     z-index: 1000;
-
-//     &--scrolled {
-//         background-color: $dark;
-//         padding-top: 5px;
-//         padding-bottom: 5px;
-//     }
-
-//     &__navbar {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//     }
-
-//     &__logo {
-//         cursor: pointer;
-//     }
-
-//     &__button {
-//         padding: 12px 15px;
-//         font-size: 1.5em;
-//         background-color: $accent;
-//         outline: none;
-//         border: none;
-//         color: $white;
-//         transition: .4s ease-out;
-//         cursor: pointer;
-
-//         &:hover {
-//             background-color: $light-accent;
-//         }
-//     }
-// }

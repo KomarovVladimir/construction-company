@@ -1,8 +1,4 @@
 .reviews {
-    &__items {
-        margin-bottom: size(2);
-    }
-
     &__card {
         padding: size(6) size(4) size(7) size(3);
         background-color: $d-white;
@@ -30,10 +26,6 @@
         font-weight: 400;
         line-height: 100%;
         color: $gray;
-    }
-
-    &__pagination {
-        text-align: center;
     }
 }
 

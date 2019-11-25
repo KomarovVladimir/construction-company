@@ -6,10 +6,26 @@
     color: $black;
     text-underline-position: under;
 
+    &:hover {
+        color: $gray;
+        border-color: $gray;
+        text-decoration-color: $gray;
+    }
+
     &_outline {
         padding: size(3) size(4);
         border: 1px solid $black;
         text-decoration: none;
+
+        &:hover {
+            color: $l-gray;
+            border-color: $l-gray;
+        }
+
+        &:active {
+            color: $gray;
+            border-color: $gray;
+        }
     }
 
     &_white {
