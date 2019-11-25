@@ -33,6 +33,10 @@
         color: $white;
         border-color: $white;
     }
+
+    &_lg {
+        font-size: 2rem;
+    }
 }
 
 @include media-breakpoint-down(sm) {

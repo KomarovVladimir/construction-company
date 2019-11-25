@@ -20,11 +20,12 @@
 
 @include media-breakpoint-down(md) {
     .gallery {
-
+        &__image {
+            height: size(39);
+        }
     }
 }
 @include media-breakpoint-down(xs) {
     .gallery {
-
     }
 }

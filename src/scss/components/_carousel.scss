@@ -50,13 +50,34 @@
 @include media-breakpoint-down(sm) {
     .carousel {
         &__arrow {
-            background-image: url(../assets/images/interface/white-arrow.png);
+            padding: 0;
+            height: size(2);
+            width: size(5);
+            background-image: url(../assets/images/interface/long-arrow.png);
 
             &_left {
+                top: unset;
                 left: 0;
+                bottom: 0;
             }
     
             &_right {
+                top: unset;
+                right: 0;
+                bottom: 0;
+            }
+            
+            &_left_inside {
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url(../assets/images/interface/white-arrow.png);
+                left: 0;
+            }
+            
+            &_right_inside {
+                top: 50%;
+                transform: translateY(-50%) rotate(180deg);
+                background-image: url(../assets/images/interface/white-arrow.png);
                 right: 0;
             }
         }
