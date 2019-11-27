@@ -77,7 +77,6 @@ $dot-background-active:	$color-base !default;
 	}
 
 	.owl-dots {
-		display: none;
 		margin-top: size(2);
 		text-align: center;
 		-webkit-tap-highlight-color: transparent;
@@ -109,7 +108,7 @@ $dot-background-active:	$color-base !default;
 }
 
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
 	.owl-theme {
 		.owl-nav {
 			display: none;

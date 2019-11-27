@@ -47,12 +47,11 @@
     }
 
     &__text {
-        padding-bottom: size(5);
-        padding-left: size(4);
+        padding: 0 size(6) size(5) size(4);
     }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
     .faq {
         &__decoration {
             display: none;

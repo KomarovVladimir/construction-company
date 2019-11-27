@@ -7,5 +7,6 @@ import '../scss/main.scss';
 import 'owl.carousel';
 import './header';
 import './portfolio';
+import './reviews,';
 import './faq';
 

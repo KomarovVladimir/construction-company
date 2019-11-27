@@ -1,7 +1,7 @@
 $(function() {
     'use strict'
 
-    $('.owl-carousel').owlCarousel({
+    $('#portfolio-carousel').owlCarousel({
         items: 1,
         margin: 64,
         nav:true,

@@ -31,6 +31,9 @@
 
 @include media-breakpoint-down(md) {
     .reviews {
+        &__card {
+            padding: size(7) size(8) size(8) size(4);
+        }
     }
 }
 
