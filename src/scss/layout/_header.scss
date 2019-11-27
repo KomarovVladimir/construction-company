@@ -89,6 +89,8 @@
 
 @include media-breakpoint-down(md) {
     .header {
+        // padding-top: size(4);
+
         &__ul {
             display: none;
             width: 100%;

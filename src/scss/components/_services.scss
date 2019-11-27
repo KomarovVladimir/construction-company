@@ -25,6 +25,9 @@
 
 @include media-breakpoint-down(md) {
     .services {
+        &__image {
+            height: size(32);
+        }
     }
 }
 

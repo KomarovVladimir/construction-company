@@ -10,7 +10,9 @@
 
 @include media-breakpoint-down(md) {
     .portfolio {
-
+        &__image {
+            height: size(44);
+        } 
     }
 }
 

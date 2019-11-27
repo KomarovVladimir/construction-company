@@ -51,6 +51,9 @@
 
 @include media-breakpoint-down(md) {
     .faq {
+        &__decoration {
+            display: none;
+        }
     }
 }
 
