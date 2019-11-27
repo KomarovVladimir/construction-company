@@ -3,26 +3,22 @@
     background-color: $black;
     border-bottom: 1px solid $dark;
 
-    &__row {
-        margin-bottom: size(10);
+    &_no_mb {
+        margin-bottom: 0 !important;
     }
 
     &__icon {
         margin-right: size(1);
     }
-
-    &__map {
-        content: '';
-        height: size(64);
-        background-color: $dark;
-    }
 }
 
 @include media-breakpoint-down(md) {
     .contacts {
-    }
-}
-@include media-breakpoint-down(xs) {
-    .contacts {
+        &__item {
+            padding-left: size(3);
+            padding-right: size(3);
+            margin-bottom: size(6);
+            text-align: center;
+        }
     }
 }
