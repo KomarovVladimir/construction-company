@@ -79,9 +79,10 @@ const config = {
       title: 'Construction Co.'
     }),
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery",
+        "window.$": "jquery"
     }),
     new CopyWebpackPlugin([
       {from:'src/assets/images', to:'images'} 
