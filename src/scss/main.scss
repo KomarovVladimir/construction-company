@@ -3,7 +3,7 @@
 @import './mixins/center';
 
 @import './vendors/bootstrap-custom';
-@import './vendors/pushy';
+@import './vendors/owl-carousel';
 
 @import './base/base';
 
@@ -20,10 +20,9 @@
 @import './components/portfolio';
 @import './components/img-link';
 @import './components/section';
-@import './components/gallery';
 @import './components/faq';
-@import './components/reviews';
+// @import './components/reviews';
 @import './components/contacts';
 @import './components/partners';
-@import './components/carousel';
-// @import './components/anchor';
+// @import './components/carousel';
+@import './components/anchor';
