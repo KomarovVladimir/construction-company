@@ -2,10 +2,11 @@
     position: fixed;
     width: 100%;
     padding-top: size(8);
+    overflow: hidden;
 
     z-index: 2000;
 
-    transition: .5s ease-out;
+    transition: .2s ease;
 
     &_scrolled {
         padding-top: size(2);
@@ -26,8 +27,9 @@
     }
 
     &_mobile_show {
-        height: 100%;
         background-color: $black;
+
+        animation: slideDown .3s ease forwards;
 
         & .header__ul {
             display: block;
@@ -76,6 +78,7 @@
 
     &__btn {
         display: none;
+        font-size: 1.5rem;
         padding: size(1) size(2);
         color: $white;
         background: none;
@@ -90,7 +93,7 @@
             display: none;
             width: 100%;
             margin-top: size(5);
-            padding-top: size(5);
+            padding-top: size(2);
             border-top: 1px solid $dark;
         }
 
@@ -115,5 +118,15 @@
 
 @include media-breakpoint-down(xs) {
     .header {
+    }
+}
+
+@keyframes slideDown {
+    from {
+        height: 50%;
+    }
+
+    to {
+        height: 100%;
     }
 }
