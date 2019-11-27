@@ -70,6 +70,10 @@
         margin-bottom: size(8);
         font-size: 2.5rem;
     }
+
+    .h3 {
+        margin-bottom: size(2.5);
+    }
 }
 
 @include media-breakpoint-down(sm) {

@@ -8,7 +8,7 @@
         }
     }
 
-    &__content {
+    &__text {
         padding-right: size(2);
     }
 
@@ -28,55 +28,37 @@
         &__image {
             height: size(32);
         }
+
+        &__content {
+            padding-left: size(2);
+
+            &_left {
+                padding-left: 0;
+            }
+        }
     }
 }
 
 @include media-breakpoint-down(sm) {
     .services {
         &__item {
-            margin-bottom: size(3);
+            padding-bottom: size(5);
+            margin-bottom: size(5);
+            border-bottom: 1px solid $l-gray;
+
+            &:last-of-type {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
         }
 
-        &__sub {
-            position: relative;
-            z-index: 1;
-        }
-
-        &__over {
-            position: absolute;
-            padding: 0;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(34, 34, 34, .7);
-            border-radius: $corners;
-            text-align: center;
-
-            z-index: 100;
-        }
-
-        &__title {
-            text-align: center;
-        }
-
-        &__link {
-            display: block;
-            color: $white;
-            line-height: size(16);
-            width: 100%;
-        }
-
-        &__image {
-            height: size(16);
-        }
-
-        &__content {
+        &__decoration {
             display: none;
         }
 
-        &__btn {
-            display: none !important;
+        &__content {
+            text-align: center;
+            padding-left: 0;
         }
     }
 }

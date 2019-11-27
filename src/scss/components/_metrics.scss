@@ -1,8 +1,9 @@
 .metrics {
     margin-top: - size(4);
 
-    &__card {
-        padding: size(9) size(2);
+    &__row {
+        padding-top: size(9);
+        padding-bottom: size(9);
         background-color: $d-white;
         border-radius: $corners;
     }
@@ -24,10 +25,9 @@
 
 @include media-breakpoint-down(lg) {
     .metrics {
-        &__card {
-            padding: size(6) size(2);
-            background-color: $d-white;
-            border-radius: $corners;
+        &__row {
+            padding-top: size(6);
+            padding-bottom: size(6);
         }
 
         &__value {
@@ -38,8 +38,9 @@
 
 @include media-breakpoint-down(md) {
     .metrics {
-        &__card {
-            padding: size(4) size(1);
+        &__row {
+            padding-top: size(4);
+            padding-bottom: size(4);
         }
 
         &__value {
@@ -55,8 +56,10 @@
 
 @include media-breakpoint-down(sm) {
     .metrics {
-        &__card {
-            padding: size(2.5) size(1);
+        &__row {
+            padding-top: size(2.5);
+            padding-bottom: size(2.5);
+            border-radius: 0;
         }
 
         &__value {

@@ -22,52 +22,8 @@
             display: none;
         }
 
-        &__sub {
-            position: relative;
-            z-index: 1;
-        }
-
-        &__over {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            padding-left: size(4);
-            padding-right: size(4);
-            background-color: rgba(34, 34, 34, .7);
-            border-radius: $corners;
-            text-align: center;
-
-            z-index: 100;
-        }
-
         &__image {
             height: size(39);
-        }
-
-        &__link {
-            font-size: 1.75rem;
-            color: $white;
-        }
-
-        &__btn {
-            font-size: 1.25rem;
-            color: $white;
-        }
-
-        &__arrow-left {
-            background-image: url(../assets/images/interface/white-arrow.png);
-            left: size(.5);
-        }
-
-        &__arrow-right {
-            background-image: url(../assets/images/interface/white-arrow.png);
-            right: size(.5);
         }
     }
 }
