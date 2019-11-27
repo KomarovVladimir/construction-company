@@ -1,8 +1,9 @@
-var $ = require("jquery"),
-        require("jquery-ui");
-        
+import 'jquery-ui/ui/widgets/accordion';
+
 $(function() {
     'use strict'
 
-    $( "#faq" ).accordion();
+    $( "#faq" ).accordion({
+        heightStyle: "content",
+    });
 })

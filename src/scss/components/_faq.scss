@@ -1,6 +1,8 @@
 .faq {
     position: relative;
     background-color: $d-white;
+    transition: .5s ease-in;
+
 
     &__decoration {
         content: '';
@@ -14,11 +16,15 @@
         background-position: center;
         background-size: cover;
         z-index: 1;
+
     }
 
     &__title {
-        display: flex;
-        align-items: center;
+        outline: none;
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 
     &__arrow {
@@ -40,11 +46,8 @@
         color: $dark;
     }
 
-    &__item {
-        margin-bottom: size(8);
-    }
-
     &__text {
+        padding-bottom: size(5);
         padding-left: size(4);
     }
 }
