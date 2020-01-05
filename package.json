@@ -12,9 +12,7 @@
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production"
   },
-  "dependencies": {
-    "aos": "^2.3.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
