@@ -9,4 +9,6 @@ import './header';
 import './portfolio';
 import './reviews,';
 import './faq';
+import AOS from 'aos';
 
+AOS.init();
