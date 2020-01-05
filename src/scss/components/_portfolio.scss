@@ -1,6 +1,6 @@
 .portfolio {
     &__image {
-        height: size(64);
+        height: 32rem;
         width: 100%;
         object-fit: cover;
     } 
@@ -9,11 +9,11 @@
 @include media-breakpoint-down(md) {
     .portfolio {
         &__image {
-            height: size(44);
+            height: 22rem;
         } 
 
         &__content {
-            padding-left: size(2);
+            padding-left: 1rem;
         }
     }
 }
@@ -25,7 +25,7 @@
         }
 
         &__image {
-            height: size(39);
+            height: 19.5rem;
         }
     }
 }

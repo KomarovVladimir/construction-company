@@ -1,15 +1,15 @@
 .metrics {
-    margin-top: - size(4);
+    margin-top: - 2rem;
 
     &__row {
-        padding-top: size(9);
-        padding-bottom: size(9);
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
         background-color: $d-white;
         border-radius: $corners;
     }
     
     &__value {
-        margin-bottom: size(2);
+        margin-bottom: 1rem;
         font-family: $rubik;
         font-size: 6rem;
         line-height: 100%;
@@ -26,8 +26,8 @@
 @include media-breakpoint-down(lg) {
     .metrics {
         &__row {
-            padding-top: size(6);
-            padding-bottom: size(6);
+            padding-top: 3rem;
+            padding-bottom: 3rem;
         }
 
         &__value {
@@ -39,13 +39,13 @@
 @include media-breakpoint-down(md) {
     .metrics {
         &__row {
-            padding-top: size(4);
-            padding-bottom: size(4);
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
 
         &__value {
             font-size: 3rem;
-            margin-bottom: size(1);
+            margin-bottom: .5rem;
         }
 
         &__label {
@@ -57,14 +57,14 @@
 @include media-breakpoint-down(sm) {
     .metrics {
         &__row {
-            padding-top: size(2.5);
-            padding-bottom: size(2.5);
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
             border-radius: 0;
         }
 
         &__value {
             font-size: 2rem;
-            margin-bottom: size(.5);
+            margin-bottom: .25rem;
         }
 
         &__label {

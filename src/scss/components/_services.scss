@@ -1,7 +1,7 @@
 .services {
     &__item {
         position: relative;
-        margin-bottom: size(8);
+        margin-bottom: 4rem;
 
         &:last-of-type {
             margin-bottom: 0;
@@ -9,28 +9,28 @@
     }
 
     &__text {
-        padding-right: size(2);
+        padding-right: 1rem;
     }
 
     &__image {
-        height: size(42);
+        height: 21rem;
         width: 100%;
         object-fit: cover;
     }
 
     &__btn {
-        margin-bottom: size(2.5);
+        margin-bottom: 1.25rem;
     }
 }
 
 @include media-breakpoint-down(md) {
     .services {
         &__image {
-            height: size(32);
+            height: 16rem;
         }
 
         &__content {
-            padding-left: size(2);
+            padding-left: 1rem;
 
             &_left {
                 padding-left: 0;
@@ -42,8 +42,8 @@
 @include media-breakpoint-down(sm) {
     .services {
         &__item {
-            padding: 0 size(3) size(5) size(3);
-            margin-bottom: size(5);
+            padding: 0 1.5rem 2.5rem 1.5rem;
+            margin-bottom: 3.5rem;
             border-bottom: 1px solid $l-gray;
 
             &:last-of-type {

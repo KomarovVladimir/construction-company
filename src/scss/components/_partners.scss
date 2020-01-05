@@ -4,18 +4,18 @@
     border-bottom: 1px solid $dark;
 
     &__row {
-        margin-bottom: - size(5);
+        margin-bottom: -2.5rem;
     }
 
     &__item {
         display: inline-block;
         width: 100%;
-        margin-bottom: size(8);
+        margin-bottom: 4rem;
     }
 
     &__logo {
         display: block;
-        height: size(8);
+        height: 4rem;
         width: auto;
         margin-left: auto;
         margin-right: auto;

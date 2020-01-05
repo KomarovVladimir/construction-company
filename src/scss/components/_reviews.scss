@@ -1,17 +1,17 @@
 .reviews {
     &__card {
-        padding: size(6) size(4) size(7) size(3);
+        padding: 3rem 2rem 3.5rem 1.5rem;
         background-color: $d-white;
         border-radius: $corners;
     }
 
     &__text {
-        margin-bottom: size(5);
+        margin-bottom: 2.5rem;
     }
 
     &__name {
         display: block;
-        margin-bottom: size(2);
+        margin-bottom: 1rem;
         font-family: $rubik;
         font-size: 2rem;
         font-weight: 500;
@@ -32,7 +32,7 @@
 @include media-breakpoint-down(md) {
     .reviews {
         &__card {
-            padding: size(7) size(8) size(8) size(4);
+            padding: 3.5rem 4rem 4rem 2rem;
         }
     }
 }
