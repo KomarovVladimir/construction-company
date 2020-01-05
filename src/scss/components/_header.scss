@@ -1,17 +1,18 @@
 .header {
     position: fixed;
     width: 100%;
-    padding-top: size(8);
-    overflow: hidden;
+    top: 0;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 
     z-index: 2000;
 
     transition: .2s ease;
 
     &_scrolled {
-        padding-top: size(2);
-        padding-bottom: size(2);
-        background-color: $black;
+        padding-top: 1rem;
+        background-color: rgba(2,2,2,.5);
+        backdrop-filter: blur(6px);
 
         & .header__nav {
             align-items: center;
@@ -22,12 +23,13 @@
         }
 
         & .header__nav-link {
-            padding: size(2) size(2);
+            padding: 1rem 1rem;
         }
     }
 
     &_mobile_show {
-        background-color: $black;
+        // background-color: $black;
+        background-color: rgba(2,2,2,.8);
 
         animation: slideDown .3s ease forwards;
 
@@ -64,7 +66,7 @@
     }
 
     &__nav-link {
-        padding: size(2) size(2);
+        padding: 1rem 1rem;
         font-family: $lato;
         font-size: 1rem;
         font-weight: 400;
@@ -79,7 +81,7 @@
     &__btn {
         display: none;
         font-size: 1.5rem;
-        padding: size(1) size(2);
+        padding: .5rem 1rem;
         color: $white;
         background: none;
         outline: none;
@@ -94,9 +96,9 @@
         &__ul {
             display: none;
             width: 100%;
-            margin-top: size(5);
-            padding-top: size(2);
-            border-top: 1px solid $dark;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #676767;
         }
 
         &__nav-item {
@@ -106,10 +108,10 @@
         &__nav-link {
             display: block;
             padding-left: 0;
-            padding-top: size(2);
-            padding-bottom: size(2);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             font-size: 1.5rem;
-            text-align: center;
+            // text-align: center;
         }
 
         &__btn {
