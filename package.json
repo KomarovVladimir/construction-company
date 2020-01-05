@@ -12,7 +12,10 @@
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production"
   },
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "wow.js": "^1.2.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
