@@ -89,7 +89,7 @@ const config = {
     new CopyWebpackPlugin([
       {from:'src/assets/images', to:'images'} 
     ]),
-    new BundleAnalyzerPlugin()
+    // new BundleAnalyzerPlugin()
   ],
   optimization: {
     runtimeChunk: 'single',

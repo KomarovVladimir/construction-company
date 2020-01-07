@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "clean": "del-cli dist",
-    "watch": "webpack -d --mode development --watch",
+    "start": "webpack -d --mode development --watch",
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production"
   },
