@@ -21,6 +21,11 @@
 
     &__title {
         outline: none;
+        cursor: pointer;
+        
+        &:hover {
+            color: $gray;
+        }
 
         &:first-child {
             margin-top: 0;
