@@ -24,21 +24,22 @@ const config = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          { loader: 'style-loader' },
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            }
-          },
-          'postcss-loader'
+            options: { sourceMap: true }
+          }, {
+            loader: 'postcss-loader',
+            options: { sourceMap: true }
+          }
         ]
       },
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader,
           { loader: 'style-loader' },
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -56,7 +57,10 @@ const config = {
                 sourceMap: true
             }
           },
-          { loader: 'sass-loader' }
+          { 
+            loader: 'sass-loader',
+            options: { sourceMap: true }
+          },
         ]
       },
       {
@@ -94,7 +98,6 @@ const config = {
     ]),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[id].css',
     }),
     // new BundleAnalyzerPlugin()
   ],
