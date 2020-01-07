@@ -11,7 +11,7 @@ import '@fortawesome/fontawesome-free/css/regular.min.css'
 import 'owl.carousel/dist/owl.carousel.min.js';
 import './header';
 import './portfolio';
-import './reviews,';
+import './reviews';
 import './faq';
 import WOW from 'wow.js/dist/wow.min.js';
 
