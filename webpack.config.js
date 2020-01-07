@@ -5,6 +5,8 @@ const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
   entry: './src/js/index.js',
@@ -35,6 +37,7 @@ const config = {
       {
         test: /\.scss$/,
         use: [
+          MiniCssExtractPlugin.loader,
           { loader: 'style-loader' },
           {
             loader: 'css-loader',
@@ -89,6 +92,10 @@ const config = {
     new CopyWebpackPlugin([
       {from:'src/assets/images', to:'images'} 
     ]),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
     // new BundleAnalyzerPlugin()
   ],
   optimization: {
