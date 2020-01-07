@@ -1,6 +1,7 @@
 // STYLES
 import 'normalize.css';
 import '../scss/main.scss';
+import 'owl.carousel/dist/assets/owl.carousel.min.css'
 import 'animate.css/animate.min.css';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css'
 
