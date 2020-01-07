@@ -76,6 +76,14 @@
 }
 
 @include media-breakpoint-down(sm) {
+    .h2 {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .h3 {
+        margin-bottom: 1.25rem;
+    }
 }
 
 @include media-breakpoint-down(xs) {
