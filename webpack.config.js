@@ -3,6 +3,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const config = {
   entry: './src/js/index.js',
@@ -86,7 +88,8 @@ const config = {
     }),
     new CopyWebpackPlugin([
       {from:'src/assets/images', to:'images'} 
-    ]), 
+    ]),
+    new BundleAnalyzerPlugin()
   ],
   optimization: {
     runtimeChunk: 'single',
@@ -98,8 +101,9 @@ const config = {
           chunks: 'all'
         }
       }
-    }
-  }
+    },
+    minimizer: [new UglifyJsPlugin()],
+  },
 };
 
 module.exports = config;
