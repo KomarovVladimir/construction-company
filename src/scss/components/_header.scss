@@ -23,12 +23,12 @@
         }
 
         & .header__nav-link {
-            padding: 1rem 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
     }
 
     &_mobile_show {
-        // background-color: $black;
         background-color: rgba(2,2,2,.8);
 
         animation: slideDown .3s ease forwards;
@@ -66,7 +66,7 @@
     }
 
     &__nav-link {
-        padding: 1rem 1rem;
+        padding-top: 1rem 1rem;
         font-family: $lato;
         font-size: 1rem;
         font-weight: 400;
