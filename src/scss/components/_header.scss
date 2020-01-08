@@ -1,7 +1,7 @@
 .header {
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100vw;
     padding-top: 4rem;
     padding-bottom: 1rem;
 
@@ -109,7 +109,6 @@
             padding-top: 1rem;
             padding-bottom: 1rem;
             font-size: 1.5rem;
-            // text-align: center;
         }
 
         &__btn {
@@ -120,6 +119,7 @@
 
 @include media-breakpoint-down(xs) {
     .header {
+        padding-top: 2rem;
         &__logo-link {
             font-size: 1.5rem;
         }

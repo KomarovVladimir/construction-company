@@ -5,7 +5,6 @@ import 'owl.carousel/dist/assets/owl.carousel.min.css'
 import 'animate.css/animate.min.css';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css'
 import '@fortawesome/fontawesome-free/css/solid.min.css'
-import '@fortawesome/fontawesome-free/css/regular.min.css'
 
 //JS
 import 'owl.carousel/dist/owl.carousel.min.js';
