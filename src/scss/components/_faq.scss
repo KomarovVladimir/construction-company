@@ -11,7 +11,7 @@
         right: 0;
         height: 100%;
         width: 40%;
-        background-image: url("../assets/images/faq.jpg");
+        background-image: url("../assets/images/faq.jpeg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -37,12 +37,12 @@
         height: .5rem;
         width: .5rem;
         margin-left: .5rem;
-        background-image: url(../assets/images/solid-arrow-active.jpg);
+        background-image: url(../assets/images/solid-arrow-active.jpeg);
         background-repeat: no-repeat;
         background-position: center;
 
         &_inactive {
-            background-image: url(../assets/images/solid-arrow-inactive.jpg);
+            background-image: url(../assets/images/solid-arrow-inactive.jpeg);
         }
     }
 

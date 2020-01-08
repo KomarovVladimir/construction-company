@@ -105,6 +105,10 @@ const config = {
       { 
         from: './src/assets/images/public', 
         to: 'images'
+      },
+      { 
+        from: './src/assets/favicon.ico', 
+        to: './'
       }
     ]),
     new webpack.ProvidePlugin({
